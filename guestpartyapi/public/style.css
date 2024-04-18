@@ -1,0 +1,108 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  width: 45%;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+h2 {
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.draggable {
+  cursor: grab;
+  padding: 10px 20px;
+  margin-bottom: 5px;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  background-color: #f5f5f5;
+}
+
+.draggable:hover {
+  background-color: #ddd;
+}
+
+#target-list .draggable {
+  background-color: #e0ffe0;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+#add-item {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+#add-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+#add-button:hover {
+  background-color: #3e8e41;
+}
+
+.edit-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.edit-controls button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.edit-controls button:first-child {
+  background-color: #3f51b5;
+  color: white;
+}
+
+.edit-controls button:last-child {
+  background-color: #f44336;
+  color: white;
+}
+
+.edit-controls button:hover {
+  opacity: 0.8;
+}
+
+.editing {
+  background-color: #f0f8ff;
+  border-color: #3f51b5;
+}
+
+.editing input {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  outline: none;
+}

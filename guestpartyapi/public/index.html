@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Birthday Party</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <h1>Party guests</h1>
+    <div class="container">
+      <div class="column" id="source">
+        <h2>Option Guests (<span id="source-count">0</span>)</h2>
+        <ul id="source-list">
+          <li class="draggable" draggable="true">Item 1</li>
+          <li class="draggable" draggable="true">Item 2</li>
+        </ul>
+        <div class="controls">
+          <input type="text" id="add-item" placeholder="Add New Item" />
+          <button id="add-button">Add</button>
+        </div>
+      </div>
+      <div class="column" id="target">
+        <h2>Invited Guests (<span id="target-count">0</span>)</h2>
+        <ul id="target-list"></ul>
+      </div>
+    </div>
+  </body>
+</html>
